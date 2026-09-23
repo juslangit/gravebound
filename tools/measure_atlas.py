@@ -69,4 +69,4 @@ if __name__ == "__main__":
     data = {name: measure(name, rows, cols) for name, rows, cols in [
         ("attack", 8, 8), ("run", 8, 8), ("axial", 4, 8), ("walk", 4, 4)
     ]}
-    (ROOT / "assets/characters/atlas.json").write_text(json.dumps(data, indent=2) + "\n")
+    (ROOT / "assets/characters/atlas.json").write_text(json.dumps(data, separators=(",", ":")) + "\n")
