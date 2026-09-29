@@ -6,3 +6,6 @@ build/
 .DS_Store
 __pycache__/
 *.log
+
+# Project record: built locally, never committed (it holds session logs)
+docs/index.html
